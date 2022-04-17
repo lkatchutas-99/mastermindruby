@@ -55,14 +55,15 @@ class Mastermind
   def print_welcome_message_one
     puts 'Welcome to Mastermind, Please read the instructions before continuing'
     puts 'This version is different as it uses numbers instead of colours '
-    puts '(due to the nature of the CL) to guess the combination.'
+    puts '(due to the nature of the CL).'
   end
 
   def print_welcome_message_two
     puts "\nThere are 12 rounds to guess the combination code (each digit ranging from 0-9)"
-    puts "that the code breaker has set.\n\nIf the code breaker guesses the code, they recieve one "
-    puts 'point. If thecode breaker fails round 12, they lose and code breaker recieves 1 points.'
-    puts 'If a human code breaker. In both cases, the roles between code maker and code breaker '
+    puts "that the code maker has set.\n\nIf the code breaker guesses the code, they recieve one "
+    puts 'point. If the code breaker fails round 12, they lose and the code maker receives 1 points.'
+    puts "If a human code breaker type 'exit', the current game will end and the opponent receives 2 points"
+    puts ' for being a coward. In both cases, the roles between code maker and code breaker '
   end
 
   def print_welcome_message_three
@@ -88,8 +89,6 @@ class Mastermind
     puts 'in this version) will end before all the games have been played and the winning player'
     puts 'wins the set since it would be impossible for the losing player to catch up and tie it. '
     puts 'If the results are tied by the end of the set, an extra sudden death game will be played.'
-    puts "Finally, it is possible to exit the current game if a human code breaker types 'exit', "
-    puts 'but the opponent will gain 2 points as a penalty for being the code breaker being a coward'
   end
 
   def print_welcome_message
